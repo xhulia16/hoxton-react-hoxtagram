@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 
-function Article() {
+ function Article() {
   const [post, setPost] = useState([]);
 
   useEffect(() => {
     fetch("http://localhost:3005/images")
       .then((resp) => resp.json())
-      .then((imagesFromServer) => useState(imagesFromServer));
+      .then((imagesFromServer) => setPost(imagesFromServer));
   }, []);
   
   return (
@@ -26,4 +26,4 @@ function Article() {
   );
 }
 
-export default Article;
+export default Article
