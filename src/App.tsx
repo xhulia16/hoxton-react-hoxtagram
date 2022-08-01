@@ -1,18 +1,14 @@
-import { useEffect, useState } from 'react'
-import './App.css'
-import Article  from "./components/article";
+import "./App.css";
+import Article from "./components/article";
+import Logo from "./components/logo";
 
 function App() {
-
   return (
     <div className="App">
-
-    <img className="logo" src="assets/hoxtagram-logo.png" />
- 
-   <Article/>
-   
+      <Logo />
+      <Article />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
