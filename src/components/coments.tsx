@@ -3,7 +3,7 @@ function Comments({ item }) {
     <ul className="comments">
       <ul className="comments">
         {item.comments.map((comment) => (
-          <li>{comment.content}</li>
+          <li key={comment.id}>{comment.content}</li>
         ))}
       </ul>
     </ul>
