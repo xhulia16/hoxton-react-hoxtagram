@@ -8,12 +8,9 @@ function App() {
     <div className="App">
 
     <img className="logo" src="assets/hoxtagram-logo.png" />
-
-
-    <section className="image-container">
-
-<Article/>
-    </section>
+ 
+   <Article/>
+   
     </div>
   )
 }
