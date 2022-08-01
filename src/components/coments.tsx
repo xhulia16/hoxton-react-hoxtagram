@@ -1,3 +1,5 @@
+import './comments.css'
+
 function Comments({ item }) {
   return (
     <ul className="comments">

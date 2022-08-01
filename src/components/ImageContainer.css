@@ -1,0 +1,27 @@
+.image-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+  .image-card {
+    width: 350px;
+    border: 1px solid #00000020;
+    border-radius: 2px;
+    text-align: left;
+    background-color: white;
+  }
+  
+  .image {
+    border-top: 1px solid #00000020;
+    border-bottom: 1px solid #00000020;
+  }
+  .title {
+    text-align: left;
+    padding: 15px 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #000000dd;
+  }
+  
