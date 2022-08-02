@@ -1,6 +1,11 @@
 import './comments.css'
+import {Image} from './ImageContainer'
 
-function Comments({ item }) {
+type Props={
+    item: Image
+}
+
+function Comments({ item }: Props) {
   return (
     <ul className="comments">
       <ul className="comments">

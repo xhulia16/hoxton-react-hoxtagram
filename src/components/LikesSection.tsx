@@ -1,6 +1,11 @@
 import "./LikesSection.css";
+import {Image} from './ImageContainer'
 
-function LikesSection({item}){
+type Props={
+    item: Image
+}
+
+function LikesSection({item}: Props){
     return(
         <div className="likes-section">
             <span className="likes">{item.likes}</span>

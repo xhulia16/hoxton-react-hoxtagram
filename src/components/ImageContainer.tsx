@@ -4,9 +4,23 @@ import { useEffect, useState } from "react";
 import Comments from "./coments";
 import LikesSection from "./LikesSection";
 
+export type Comment={
+  id: number
+  content: string
+  imageId: number
+  }
+  
+  export type Image={
+  id: number
+  title: string
+  likes: number
+  image: string
+  comments: Comment[]
+  }
 
 function Article() {
-  const [post, setPost] = useState([]);
+  const [post, setPost] = useState<Image[]>([]);
+
 
   useEffect(() => {
     fetch("http://localhost:3005/images")
